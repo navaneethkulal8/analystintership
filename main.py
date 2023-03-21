@@ -3,7 +3,8 @@ from bs4 import BeautifulSoup
 import csv
 
 url = 'https://www.amazon.in/s?k=bags&crid=2M096C61O4MLT&qid=1653308124&sprefix=ba%2Caps%2C283&ref=sr_pg_'
-headers ={'user-agent':'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36'}
+# The variable headers is a dictionary which has the value of user_agent, we can get our user agent by direct googling it
+# headers ={'user-agent':"add the link here and remove the comment"}
 pages_to_scrape = 20
 fieldnames = ['Product URL', 'Product Name', 'Product Price', 'Rating', 'Number of reviews']
 with open('products.csv', 'w',encoding='utf-8', newline='') as csvfile:

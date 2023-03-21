@@ -4,7 +4,7 @@ from bs4 import BeautifulSoup
 
 
 # The variable headers is a dictionary which has the value of user_agent, we can get our user agent by direct googling it
-headers ={'user-agent':'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36'}
+# headers ={'user-agent':# add the link here}
 with open('products.csv', 'r') as csvfile:
     reader = csv.reader(csvfile)
     product_urls = [row[0] for row in reader]
